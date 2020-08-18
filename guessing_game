@@ -1,0 +1,15 @@
+import random
+highest = 10
+answer = random.randint( 0, highest)
+print(answer)
+print("PLease guess the number between 1 and {0}".format(highest))
+guess = 0
+while answer != guess:
+    guess = int(input())
+    if guess == answer:
+        print("you guessed correctly")
+        break
+    elif guess > answer:
+        print(" guess lower")
+    elif guess < answer:
+        print("guess higher")
